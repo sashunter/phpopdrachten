@@ -43,20 +43,20 @@
             Taak 2
         </h2>
         <p>
-            <?php echo $text1. $text3. $text4  . $text2; ?>
+            <?php echo "<p>" . $text1. $text3. $text4  . $text2 . "</p>"; ?>
         </p>
         <p>
             <?php echo $text3, $text6, $text7; ?>
         </p>
         <p>
-            <?php echo $text5, $text4, $text2, $text3 ?>
+            <?php echo $text5, $text4, $text2, $text3; ?>
         </p>
         <p>
-            Hallo.
+            <?php echo $text1;?>
         </p>
         <p>
-            <?php echo $text7 . "dat " . $text4 . $text2 . "is" ?><br>
-            <?php echo $text6 . "is best moielijk, vind je niet?" ?>
+            <?php echo $text7 . "dat " . $text4 . $text2 . "is"; ?><br>
+            <?php echo $text6 . "is best moielijk, vind je niet?"; ?>
         </p>
 
 
