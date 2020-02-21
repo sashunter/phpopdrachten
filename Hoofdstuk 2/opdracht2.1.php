@@ -6,18 +6,10 @@
  * File: opdracht2.1.php
  */
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="opdracht x">
-        <meta name="keywords" content="keyword 1, keyword 2">
-        <link href="cssstyle.css" type="text/css" rel="stylesheet">
-        <title>
-            PHP Professional
-        </title>
-    </head>
-    <body>
+<?php
+include "../include/header.php";
+include "../include/menu.php";
+?>
         <main id="wrapper">
             <h2>Uitwerkingen</h2>
             <p><?php echo "Hello World!"; ?> </p>

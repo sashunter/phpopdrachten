@@ -28,7 +28,6 @@
         <meta charset="utf-8">
         <meta name="description" content="opdracht 2.1">
         <meta name="keywords" content="keyword 1, keyword 2">
-        <link href="cssstyle.css" type="text/css" rel="stylesheet">
         <title>
             PHP Professional
         </title>

@@ -1,0 +1,30 @@
+/*de achtergrondskleur van de header verandert en de positie*/
+header
+{
+    background-color: #e298ff;
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    text-align: right;
+    z-index: 10;
+    margin: 0px;
+    height: 50px;
+}
+/*de h1 in de header*/
+header>h1{
+    margin: 0px 30px;
+}
+/*de achtergrondskleur veranderen en de margin en padding op 0 zetten*/
+body{
+    background-color: #a298ff;
+    padding: 0px;
+    margin: 0px;
+}
+/*de id menu opgemaakt en een positie gegeven*/
+aside{
+    background-color: thistle;
+    width: 500px;
+    height: 800px;
+    float: left;
+    margin-right: 30px;
+}
