@@ -21,17 +21,10 @@ $story = "De " . $evenement . " (Fries: ". $name . ") is een ". $kilometernr. " 
  * File: opdracht3.1.php
  */
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="opdracht 2.1">
-    <meta name="keywords" content="keyword 1, keyword 2">
-    <title>
-        PHP Professional
-    </title>
-</head>
-<body>
+<?php
+include "../include/header.php";
+include "../include/menu.php";
+?>
 <main id="wrapper">
     <h2>
         Uitwerkingen
@@ -40,5 +33,4 @@ $story = "De " . $evenement . " (Fries: ". $name . ") is een ". $kilometernr. " 
         <?php echo "<p>" . $story . "</p>";?>
 
 </main>
-</body>
-</html>
+

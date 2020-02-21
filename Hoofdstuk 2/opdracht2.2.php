@@ -22,17 +22,10 @@
  * File: opdracht2.2.php
  */
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="opdracht 2.1">
-        <meta name="keywords" content="keyword 1, keyword 2">
-        <title>
-            PHP Professional
-        </title>
-    </head>
-    <body>
+<?php
+include "../include/header.php";
+include "../include/menu.php";
+?>
     <main id="wrapper">
         <h2>
             Uitwerkingen
@@ -60,5 +53,4 @@
 
 
     </main>
-    </body>
-</html>
+
