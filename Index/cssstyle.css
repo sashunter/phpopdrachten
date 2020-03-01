@@ -28,3 +28,12 @@ aside{
     float: left;
     margin-right: 30px;
 }
+/*de footer een kleur en een positite gegeven*/
+footer
+{
+    background-color: darkslateblue;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 50px;
+}
