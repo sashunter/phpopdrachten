@@ -15,10 +15,16 @@ $driveOn = true;
 <?php
 include "../include/header.php";
 include "../include/menu.php";
-include  "../include/footer.php";
 ?>
+<!--een main aangemaakt-->
 <main>
+<!--    een koptekst niveau 2 element-->
+    <h2>
+        Uitwerkingen
+    </h2>
+
     <?php
+//    een if else statement gemaakt
     if ($trafficLightColor == "groen" && $ambulanceComing == false){
         $driveOn = true;
     }
@@ -84,3 +90,7 @@ include  "../include/footer.php";
     ?>
 
 </main>
+<!--de footer toegevoegd-->
+<?php
+include  "../include/footer.php";
+?>

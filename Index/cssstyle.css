@@ -29,11 +29,16 @@ aside{
     margin-right: 30px;
 }
 /*de footer een kleur en een positite gegeven*/
-footer
+footer#foot
 {
     background-color: darkslateblue;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     width: 100vw;
     height: 50px;
+    color: red;
+    z-index: 100;
+}
+h3{
+    color: red;
 }

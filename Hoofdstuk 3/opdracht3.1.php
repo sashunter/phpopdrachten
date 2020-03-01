@@ -24,6 +24,7 @@ $story = "De " . $evenement . " (Fries: ". $name . ") is een ". $kilometernr. " 
 <?php
 include "../include/header.php";
 include "../include/menu.php";
+
 ?>
 <main id="wrapper">
     <h2>
