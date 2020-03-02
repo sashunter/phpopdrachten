@@ -12,9 +12,11 @@ $driveOn = true;
  * File: opdracht3.2.php
  */
 ?>
+<!--een header, menu en footer toegevoegd-->
 <?php
 include "../include/header.php";
 include "../include/menu.php";
+include  "../include/footer.php";
 ?>
 <!--een main aangemaakt-->
 <main>
@@ -90,7 +92,3 @@ include "../include/menu.php";
     ?>
 
 </main>
-<!--de footer toegevoegd-->
-<?php
-include  "../include/footer.php";
-?>

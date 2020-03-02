@@ -10,7 +10,7 @@
 <footer id="foot">
     <h3>
         <?php
-            echo "&copy " . "2020";
+            echo $year . $name;
         ?>
     </h3>
 </footer>
