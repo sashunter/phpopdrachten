@@ -19,6 +19,7 @@ body{
     background-color: #a298ff;
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
 }
 /*de id menu opgemaakt en een positie gegeven*/
 aside{
@@ -32,13 +33,15 @@ aside{
 footer#foot
 {
     background-color: darkslateblue;
-    position: relative;
+    position: fixed;
     bottom: 0px;
     width: 100vw;
     height: 50px;
     color: red;
     z-index: 100;
 }
+/*de koptekst niveau 3 een kleur gegeven en in het midden gezet*/
 h3{
-    color: red;
+    color: darkcyan ;
+    text-align: center;
 }
