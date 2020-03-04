@@ -38,7 +38,7 @@ $base_url = "http://localhost/phpopdrachten/";
                         Hoofdstuk 4
                         <ul>
                             <li>
-                               <a href="">Opdracht 4.1</a>
+                               <a href="../hoofdstuk%204/opdracht4.1.php">Opdracht 4.1</a>
                             </li>
                             <li>
                                 <a>Opdracht 4.2</a>

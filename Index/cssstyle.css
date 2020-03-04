@@ -44,3 +44,8 @@ h3{
     color: darkcyan ;
     text-align: center;
 }
+/*de lijn onder mijn opdrachten in het menu weg gehaald en de tekst een andere kleur gegeven*/
+a{
+    text-decoration: none;
+    color: deeppink;
+}

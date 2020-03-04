@@ -1,4 +1,7 @@
 <?php
+//een variable hour gemaakt
+date_default_timezone_set("Europe/Amsterdam");
+$hour = date("H");
 ?>
 <?php
 /**
@@ -18,5 +21,24 @@ include "../include/footer.php";
     <h2>
         Uitwerkingen
     </h2>
+    <?php
+//    een switch gemaakt
+    switch ($hour)
+    {
+        case $hour <= 5:
+            echo "Goedenacht";
+            break;
+        case $hour <= 12:
+            echo "goedenochtend";
+            break;
+        case $hour <= 17:
+            echo "Goedenmiddag";
+            break;
+        default:
+            echo "goedenavond";
+            break;
+    };
+
+    ?>
 
 </main>
