@@ -12,11 +12,11 @@ $driveOn = true;
  * File: opdracht3.2.php
  */
 ?>
-<!--een header, menu en footer toegevoegd-->
+<!--de header door include tonen + de menu en de footer-->
 <?php
 include "../include/header.php";
 include "../include/menu.php";
-include  "../include/footer.php";
+include "../include/footer.php";
 ?>
 <!--een main aangemaakt-->
 <main>
@@ -40,7 +40,7 @@ include  "../include/footer.php";
         echo "<p id='green'>" . "U mag doorrijden" . "</p>";
     }
 
-    else if ( $driveOn == false)
+    elseif ( $driveOn == false)
     {
         echo "<p id='red'>" . "U moet stoppen" . "</p>";
     }
@@ -48,15 +48,17 @@ include  "../include/footer.php";
     $countryName = "Nederland"; // string
     $currentAge = 16; // integer
 
+//    if($country == "NL" || $country == "BE")
+
 
     // if/ else if/ else statement van countryname en currentage
-    if($countryName == "Bulgarije" && $countryName == "Nederland" && $countryName == "Zweden" && $currentAge < 18)
+    if($countryName == "Bulgarije" || $countryName == "Nederland" || $countryName == "Zweden" && $currentAge < 18)
 
     {
         echo "niet";
     }
 
-    else if($countryName == "België" && $currentAge <= 16)
+    else if($countryName == "België" && $currentAge < 16)
 
     {
         echo "niet";
@@ -68,7 +70,7 @@ include  "../include/footer.php";
         echo "niet";
     }
 
-    else if($countryName == "Bulgarije" && $countryName == "België" && $countryName == "Nederland" && $currentAge >= 18)
+    else if($countryName == "Bulgarije" && $currentAge >= 18 || $countryName == "België" && $currentAge >= 18 || $countryName == "Nederland" && $currentAge >= 18)
 
     {
         echo "alle drank";
@@ -86,8 +88,8 @@ include  "../include/footer.php";
         echo "alle drank";
     }
 
-    else {
-        echo "alleen zwakke";
+    elseif ($countryName == "Zweden" && $currentAge < 18){
+        echo "niet";
     }
     ?>
 

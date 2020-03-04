@@ -3,14 +3,13 @@
 <?php
 /**
  * User: Muhammad Mouchli
- * Date: 02-03-2020
- * Time: 15:10
- * File: opdracht3.3.php
+ * Date: 04-03-2020
+ * Time: 13:44
+ * File: opdracht4.1.php
  */
 ?>
 <!--de header door include tonen + de menu en de footer-->
 <?php
-include "../Hoofdstuk 3/variabelen.php";
 include "../include/header.php";
 include "../include/menu.php";
 include "../include/footer.php";

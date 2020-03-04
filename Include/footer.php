@@ -7,10 +7,13 @@
  * File: footer.php
  */
 ?>
+<?php
+include "../Hoofdstuk 3/variabelen.php";
+?>
 <footer id="foot">
     <h3>
         <?php
-            echo $year . $name;
+            echo $year . " " . $name;
         ?>
     </h3>
 </footer>

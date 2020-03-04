@@ -6,10 +6,12 @@
  * File: opdracht2.1.php
  */
 ?>
+<!--de header door include tonen + de menu en de footer-->
 <?php
+include "../Hoofdstuk 3/variabelen.php";
 include "../include/header.php";
 include "../include/menu.php";
-include  "../include/footer.php";
+include "../include/footer.php";
 ?>
         <main id="wrapper">
             <h2>Uitwerkingen</h2>
