@@ -23,22 +23,33 @@ include "../include/footer.php";
     </h2>
     <?php
 //    een switch gemaakt
-    switch ($hour)
-    {
-        case $hour <= 5:
-            echo "Goedenacht";
-            break;
-        case $hour <= 12:
-            echo "goedenochtend";
-            break;
-        case $hour <= 17:
-            echo "Goedenmiddag";
-            break;
-        default:
-            echo "goedenavond";
-            break;
-    };
-
+//    switch ($hour)
+//    {
+//        case $hour <= 5:
+//            echo "Goedenacht";
+//            break;
+//        case $hour <= 12:
+//            echo "goedenochtend";
+//            break;
+//        case $hour <= 17:
+//            echo "Goedenmiddag";
+//            break;
+//        default:
+//            echo "goedenavond";
+//            break;
+//    };
+    if ($hour <=5){
+        echo "Goedenacht";
+    }
+    elseif($hour<= 11){
+        echo "goedenochtend";
+    }
+    elseif($hour<= 17){
+        echo "goedenmiddag";
+    }
+    else{
+        echo "goedenavond";
+    }
     ?>
 
 </main>

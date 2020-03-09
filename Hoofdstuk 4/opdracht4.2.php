@@ -6,8 +6,8 @@
 //javascript wetering
 //burgerschap angela
 //nederlands rijswijk
-$courseName ="PHP";
-$teacherName = "Mr. helder"
+$courseName ="asp";
+
 ?>
 <?php
 /**
@@ -28,31 +28,32 @@ include "../include/footer.php";
         Uitwerkingen
     </h2>
     <?php
+    //$courseName = "php";
     //    een switch gemaakt
     switch ($courseName)
     {
-        case $courseName == "nederlands" && $teacherName == "rijswijk" :
-            echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "nederlands";
+            $teacherName = "rijswijk";
             break;
-        case $courseName == "PHP" && $teacherName == "Mr. helder" :
-            echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "PHP";
+            $teacherName = "Mr. helder";
             break;
-        case $courseName == "burgerschap" && $teacherName == "angela" :
-            echo "Voor het vak " ."<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "burgerschap" ;
+            $teacherName = "angela";
             break;
-        case $courseName == "javascript" && $teacherName == "wetering" :
-            echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "javascript";
+        $teacherName = "wetering";
             break;
-        case $courseName == "modelleren" && $teacherName == "ralph" :
-            echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "modelleren";
+        $teacherName = "ralph";
             break;
-        case $courseName == "asp" && $teacherName == "ralph" :
-            echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "asp";
+        $teacherName = "ralph";
             break;
-        case $courseName == "engels" && $teacherName == "mitrovic" :
-            echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
+        case "engels";
+        $teacherName = "mitrovic";
             break;
     };
-
+    echo "Voor het vak " . "<span>" . $courseName . "</span>" . " heb je " . "<span>" . $teacherName . "</span>" ." als docent.";
     ?>
 </main>
