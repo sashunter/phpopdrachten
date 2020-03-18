@@ -3,8 +3,6 @@ header
 {
     background-color: #e298ff;
     position: relative;
-    top: 0px;
-    width: 100vw;
     text-align: right;
     z-index: 10;
     margin: 0px;
@@ -19,7 +17,7 @@ body{
     background-color: #a298ff;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 /*de id menu opgemaakt en een positie gegeven*/
 aside{
@@ -40,7 +38,7 @@ footer#foot
     z-index: 100;
 }
 /*de koptekst niveau 3 een kleur gegeven en in het midden gezet*/
-h3{
+footer>h3{
     color: darkcyan ;
     text-align: center;
 }

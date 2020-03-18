@@ -8,7 +8,6 @@
 ?>
 <!--de header door include tonen + de menu en de footer-->
 <?php
-include "../Hoofdstuk 3/variabelen.php";
 include "../include/header.php";
 include "../include/menu.php";
 include "../include/footer.php";
@@ -17,5 +16,4 @@ include "../include/footer.php";
             <h2>Uitwerkingen</h2>
             <p><?php echo "Hello World!"; ?> </p>
         </main>
-    </body>
-</html>
+

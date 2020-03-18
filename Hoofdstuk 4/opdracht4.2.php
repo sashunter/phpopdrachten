@@ -6,7 +6,7 @@
 //javascript wetering
 //burgerschap angela
 //nederlands rijswijk
-$courseName ="asp";
+$courseName ="nederlands";
 
 ?>
 <?php
