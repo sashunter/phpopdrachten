@@ -21,7 +21,7 @@ include "../include/footer.php";
     <h3>
         Kalender van volgende week:
     </h3>
-    //php code gemaakt
+<!--    php code gemaakt-->
     <?php
     //een for loop gemaakt
     for($i = 0; $i <= 7; $i++) {
