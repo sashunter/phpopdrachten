@@ -54,7 +54,8 @@ include "../include/footer.php";
         <br>
         <label for="bericht">Bericht</label>
         <br>
-        <input type="text" id="bericht" name="bericht">
+<!--        <input type="text" id="bericht" name="bericht">-->
+        <textarea name="bericht" id="bericht"></textarea>
         <br>
 <!--        een submit button gemaakt-->
         <input type="submit" value="versturen">
