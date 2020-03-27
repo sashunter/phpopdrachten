@@ -52,6 +52,14 @@ $base_url = "http://localhost/phpopdrachten/";
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        Hoofdstuk 5
+                        <ul>
+                            <li>
+                                <a href="../hoofdstuk%205/opdracht5.1.php">Opdracht 5.1</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </aside>

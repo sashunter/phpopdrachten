@@ -24,12 +24,11 @@ include "../include/footer.php";
 <!--    php code gemaakt-->
     <?php
     //een for loop gemaakt
-    for($i = 0; $i <= 7; $i++) {
-        $adder = strtotime("now +" . $i . "days");
+    for($i = 0; $i <= 7;  $i++) {
+        $adder = strtotime("+" . $i . "days");
         $dayNumber = date('w', $adder);
         $fullDate = date('l d-n-Y', $adder);
         echo "Dag " . $dayNumber . " is " . $fullDate."<br>";
     }
-
     ?>
 </main>
