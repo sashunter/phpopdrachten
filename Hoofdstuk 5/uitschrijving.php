@@ -36,7 +36,7 @@ include "../include/footer.php";
             </td>
             <td>
                 <!--                de ingevoerde data getoond-->
-                <?php echo $_GET["studentnr"] ?>
+                <?php echo $_GET["studentnr"]; ?>
             </td>
         </tr>
         <tr>
@@ -45,7 +45,7 @@ include "../include/footer.php";
             </td>
             <td>
                 <!--                de ingevoerde data getoond-->
-                <?php echo $_GET["datum"] ?>
+                <?php echo $_GET["datum"]; ?>
             </td>
         </tr>
         <tr>

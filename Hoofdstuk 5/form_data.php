@@ -60,14 +60,14 @@ include "../include/footer.php";
                 E-mail:
             </td>
             <td>
-                <?php echo $_GET["email"] ?>
+                <?php echo $_GET["email"]; ?>
             </td>
         </tr><tr>
             <td>
                 Bericht:
             </td>
             <td>
-                <?php echo $_GET["bericht"] ?>
+                <?php echo $_GET["bericht"]; ?>
             </td>
         </tr>
 

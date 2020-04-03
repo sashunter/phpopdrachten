@@ -74,7 +74,7 @@ include "../include/footer.php";
                 </td>
             </tr>
 <!--            een fieldset gemaakt-->
-            <fieldset>
+
             <tr>
                 <td>
                     <label for="leerjaar">Leerjaar</label>
@@ -99,7 +99,7 @@ include "../include/footer.php";
                     <input type="radio" name="leerjaar" value="3e leerjaar">3e leerjaar
                 </td>
             </tr>
-            </fieldset>
+
             <tr>
                 <td>
                     <input type="checkbox" name="aanmelden" value="Ja"> Ik wil me aanmelden bij de succesklas
