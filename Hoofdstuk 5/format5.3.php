@@ -101,7 +101,7 @@ include "functions.php";
             </td>
             <td>
                 <!--                de ingevoerde data getoond-->
-                <?php echo echoKans()?>
+                <?php echoKans();?>
             </td>
         </tr>
         <tr>
@@ -110,14 +110,14 @@ include "functions.php";
             </td>
             <td>
                 <!--                de ingevoerde data getoond-->
-                <?php echo getKans1Op()?>
+                <?php echo getKans1Op();?>
             </td>
         </tr>
         <tr>
             <td>
                 <!--                de ingevoerde data getoond-->
                 <?php
-                echo vergelijkOorzaken(getKans1Op())
+                echo vergelijkOorzaken(getKans1Op());
                 ?>
 
             </td>
