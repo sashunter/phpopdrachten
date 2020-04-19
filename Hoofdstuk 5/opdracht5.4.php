@@ -63,31 +63,33 @@ include "../include/footer.php";
     </form>
     <?php
 //        de action is hetzelfde script als het formulier, eerst testen of het formulier verzonden is
-        if (isset($_POST['submit'])) {
-        echo "<h3>Wat is de situatie en wat moet ik doen?</h3><div>";
-//        Een van de of beide radiobuttons is/zijn niet aangevinkt
-        if (!isset($_POST['trafficLightColor']) || !isset($_POST['ambulanceComing'])) {
-            echo "Of stoplichtkleur is onbekend of het is onbekend of de ambulance komt.";
-        }
-        else
+        if (isset($_POST['submit']))
         {
-            //variabelen gemaakt van de geselecteerde data.
-        $trafficLightColor = $_POST['trafficLightColor'];
-        $ambulanceComing = $_POST['ambulanceComing'];
-        echo "Stoplicht staat op $trafficLightColor en er komt: $ambulanceComing een
-        ambulance aan.";
-        //Bepalen of je wel of niet mag doorrijden
-            // Wat betekent <> voor groen???????????????????????????????????
-        if ($trafficLightColor == "groen" && $ambulanceComing == 'nee')
-        {
-        echo "<div class='green'>U mag doorrijden</div>";
-        }
-        else
-         {
-         echo " <div class='red'>U moet stoppen</div>";
-         }
-         }
-         echo "</div>";
+            echo "<h3>Wat is de situatie en wat moet ik doen?</h3><div>";
+    //        Een van de of beide radiobuttons is/zijn niet aangevinkt
+            if (!isset($_POST['trafficLightColor']) || !isset($_POST['ambulanceComing']))
+            {
+                echo "Of stoplichtkleur is onbekend of het is onbekend of de ambulance komt.";
+            }
+            else
+            {
+                //variabelen gemaakt van de geselecteerde data.
+                $trafficLightColor = $_POST['trafficLightColor'];
+                $ambulanceComing = $_POST['ambulanceComing'];
+                echo "Stoplicht staat op $trafficLightColor en er komt: $ambulanceComing een
+                ambulance aan.";
+                //Bepalen of je wel of niet mag doorrijden
+                    // Wat betekent <> voor groen???????????????????????????????????
+                if ($trafficLightColor == "groen" && $ambulanceComing == 'nee')
+                {
+                    echo "<div class='green'>U mag doorrijden</div>";
+                }
+                else
+                {
+                     echo " <div class='red'>U moet stoppen</div>";
+                }
+             }
+            echo "</div>";
          }
          ?>
 
