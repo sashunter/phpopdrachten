@@ -13,35 +13,44 @@ include "../include/menu.php";
 include "../include/footer.php";
 ?>
 <?php
+//een variabele gemaakt
+$showlogin = "true";
+//als de username en password mee worden gestuurd
 if(isset($_POST['username']) || isset($_POST["password"])) {
     include "Script.php";
 }
 ?>
 <main>
-    <!--    koptekst niveau 2 gemaakt-->
+<!--        koptekst niveau 2 gemaakt-->-->
     <h2>
         Uitwerkingen
     </h2>
     <h3>
         Bergheen
     </h3>
+<!--    als de variabele showlogin de waarde "true" heeft, dan laat hij de onderstaande HTML code zien-->
     <?php
-    if($showlogin = true)
+    if($showlogin = "true")
     {
         ?>
         <p>
             Login om onze adresgegevens + openingstijden te zien
         </p>
         <?php
+        //de variabele $message geechod
         echo $message;
         ?>
+<!--        een formulier gemaakt-->
         <form action="login.php" method="post">
+<!--            een tabel gemaakt-->
             <table>
                 <tr>
                     <td>
+<!--                        een lebel gemaakt-->
                         <label for="username">Username</label>
                     </td>
                     <td>
+<!--                        een input veld gemaakt-->
                         <input type="text" name="username">
                     </td>
                 </tr>
@@ -63,15 +72,19 @@ if(isset($_POST['username']) || isset($_POST["password"])) {
         </form>
         <?php
     }
-    elseif($showlogin = false)
+//    en anders laat hij de onderstaande HTML code zien.
+    else
     {
     ?>
+<!--        koptekst niveau 3 gemaakt-->
         <h3>
             Welkom
         </h3>
+<!--        koptekst niveau 4 gemaakt-->
         <h4>
             Openingstijden
         </h4>
+<!--        een paragraaf gemaakt-->
         <p>
             Do: 22:00<br>
             Vr: All day<br>
@@ -91,3 +104,4 @@ if(isset($_POST['username']) || isset($_POST["password"])) {
 
     ?>
 </main>
+

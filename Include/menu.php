@@ -69,6 +69,9 @@ $base_url = "http://localhost/phpopdrachten/";
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="../Eindopdracht%20Periode%203/login.php">Eindopracht Periode 3</a>
+                    </li>
                 </ul>
             </div>
         </aside>
