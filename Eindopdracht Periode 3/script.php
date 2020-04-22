@@ -13,6 +13,7 @@ foreach($keys as $theName => $pincode)
     if($theName == $username && $pincode == $password)
     {
         $showlogin = "false";
+        break;
     }
     else
     {

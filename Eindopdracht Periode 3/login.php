@@ -30,7 +30,7 @@ if(isset($_POST['username']) || isset($_POST["password"])) {
     </h3>
 <!--    als de variabele showlogin de waarde "true" heeft, dan laat hij de onderstaande HTML code zien-->
     <?php
-    if($showlogin = "true")
+    if($showlogin == "true")
     {
         ?>
         <p>
