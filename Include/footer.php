@@ -12,7 +12,20 @@ include "../Hoofdstuk 3/variabelen.php";
 <footer id="foot">
     <h3>
         <?php
-            echo $year . " " . $name;
+            echo $year . " ";
+        //voor opdracht 6.1 de login scherm
+        session_start();
+        if (isset($_SESSION['username'])) {
+            $bezoeker = $_SESSION['username']. "&nbsp;<a
+    href='../Hoofdstuk%206/loguit.php'>Loguit</a>";
+        }
+        else {
+            $bezoeker = "Onbekende bezoeker". "&nbsp;<a
+    href='../Hoofdstuk%206/opdracht6.1.php'>Login</a>";
+
+        }
+echo $bezoeker;
         ?>
     </h3>
 </footer>
+
