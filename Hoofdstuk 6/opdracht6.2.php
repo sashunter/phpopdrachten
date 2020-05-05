@@ -8,6 +8,9 @@
 ?>
 <!--de header door include tonen + de menu en de footer-->
 <?php
+
+$_SESSION['user1'] = 0;
+$_SESSION['user2'] = 0;
 include "../include/header.php";
 include "../include/menu.php";
 ?>
@@ -36,13 +39,11 @@ include "../include/menu.php";
         <br>
     </form>
 <?php
-session_start();
-$_SESSION['user1'] = 0;
-$_SESSION['user2'] = 0;
+
 
 //als de gebruiker een keuze maakt en op de knop submit klikt, dan wordt de keuze gezien.
 if (isset($_GET['submit'])) {
-
+    session_start();
     echo "Jij koos: <img src='{$_GET['choice']}.png'>";
     $opties = array("steen","papier","schaar");
     $computerkeuzegetal = rand(0,2);
@@ -54,23 +55,24 @@ if($_GET["choice"] == "steen" && $computerkeuze == "steen" || $_GET["choice"] ==
 }
 elseif ($_GET["choice"] == "papier" && $computerkeuze == "steen" || $_GET["choice"] == "steen" && $computerkeuze == "schaar" || $_GET["choice"] == "schaar" && $computerkeuze == "papier"){
     echo "Jij scoort! <br>";
-    $_SESSION['user1']++;
+    $_SESSION['user1'] ++ ;
 }
 elseif ($_GET["choice"] == "steen" && $computerkeuze == "papier" || $_GET["choice"] == "schaar" && $computerkeuze == "steen" || $_GET["choice"] == "papier" && $computerkeuze == "schaar"){
     echo "De computer scoort! <br>";
-    $_SESSION['user2']++;
+    $_SESSION['user2'] ++;
 }
 echo "Het staat " . $_SESSION['user1'] . " tegen " . $_SESSION['user2'] . "<br>";
+print_r($_SESSION);
 
-if($_SESSION['user1'] == 5)
-{
-    echo "Jij hebt gewonnen.";
-    session_destroy();
-}
-if ($_SESSION['user2'] == 5){
-    echo "De computer heeft gewonnen!";
-    session_destroy();
-}
+//if($_SESSION['user1'] == 5)
+//{
+//    echo "Jij hebt gewonnen.";
+//    session_destroy();
+//}
+//if ($_SESSION['user2'] == 5){
+//    echo "De computer heeft gewonnen!";
+//    session_destroy();
+//}
 
 
 ?>

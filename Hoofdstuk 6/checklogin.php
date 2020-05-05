@@ -1,4 +1,5 @@
 <?php
+
 //array gemaakt met namen en wachtwoorden
 $authUsers = Array(
     "Abu" => "bekend",
@@ -23,6 +24,7 @@ foreach($authUsers as $theName => $pincode)
         $message = "Ongeldige username/wachtwoord
         {$_POST['username']}, probeer het nog eens.";
         include "opdracht6.1.php";
+        break;
 
     }
 }

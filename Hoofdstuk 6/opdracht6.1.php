@@ -8,6 +8,7 @@
 ?>
     <!--de header door include tonen + de menu en de footer-->
 <?php
+session_start();
 include "../include/header.php";
 include "../include/menu.php";
 ?>
