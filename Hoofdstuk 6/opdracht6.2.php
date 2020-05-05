@@ -50,6 +50,7 @@ if (isset($_GET['submit'])) {
     $computerkeuze = $opties[$computerkeuzegetal];
     echo "&nbsp;&nbsp;De computer koos: <img src='{$computerkeuze}.png'>"."<br>" ."<br>";
 }
+//als de gebruiker of de computer dezelfde kiezen krijgen ze de onderstaande code te zien.
 if($_GET["choice"] == "steen" && $computerkeuze == "steen" || $_GET["choice"] == "papier" && $computerkeuze == "papier" || $_GET["choice"] == "schaar" && $computerkeuze == "schaar"){
     echo "Gelijk! <br>";
 }
@@ -62,6 +63,7 @@ elseif ($_GET["choice"] == "steen" && $computerkeuze == "papier" || $_GET["choic
     $_SESSION['user2'] ++;
 }
 echo "Het staat " . $_SESSION['user1'] . " tegen " . $_SESSION['user2'] . "<br>";
+//print de session, dus de waarde van de session tonen
 print_r($_SESSION);
 
 //if($_SESSION['user1'] == 5)
@@ -78,4 +80,5 @@ print_r($_SESSION);
 ?>
 </main>
 <?php
+// de footer geinclude
 include "../include/footer.php";?>
